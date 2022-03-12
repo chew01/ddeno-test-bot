@@ -17,7 +17,7 @@ import slashLogWebhook from "../../../utils/slashWebhook.ts";
 import { BotClient } from "../../botClient.ts";
 import { loadLanguage, serverLanguages, translate } from "../../languages/translate.ts";
 import { Command, ConvertArgumentDefinitionsToArgs } from "../../types/command.ts";
-import commands from "./mod.ts";
+import commands from "./interactionCommands.ts";
 
 function logCommand(
   info: DiscordenoInteraction,

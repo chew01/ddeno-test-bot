@@ -2,6 +2,7 @@ import { ButtonData, InteractionTypes, MessageComponentTypes } from "../../../..
 import { bot } from "../../mod.ts";
 import { executeSlashCommand } from "../interactions/executeSlashCommand.ts";
 
+/** Set an event for interactionCreate, to parse and execute slash commands. */
 export function setInteractionCreateEvent() {
   bot.events.interactionCreate = async function (_, interaction) {
     // SLASH COMMAND

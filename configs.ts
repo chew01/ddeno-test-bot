@@ -3,11 +3,10 @@ import { dotEnvConfig, GatewayIntents } from "./deps.ts";
 // Get the .env file that the user should have created, and load the configs.
 const env = dotEnvConfig({ export: true });
 
-// TODO: REMOVE THESE! THEY ARE BAD FOR YOU! DUH! Seriously, only keep the ones your bot needs!
 export const GATEWAY_INTENTS: (keyof typeof GatewayIntents)[] = [
   // "DirectMessageReactions",
   // "DirectMessageTyping",
-  // "DirectMessages",
+  "DirectMessages",
   // "GuildBans",
   // "GuildEmojis",
   // "GuildIntegrations",
@@ -15,7 +14,7 @@ export const GATEWAY_INTENTS: (keyof typeof GatewayIntents)[] = [
   // "GuildMembers",
   // "GuildMessageReactions",
   // "GuildMessageTyping",
-  // "GuildMessages",
+  "GuildMessages",
   // "GuildPresences",
   // "GuildVoiceStates",
   // "GuildWebhooks",

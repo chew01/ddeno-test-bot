@@ -12,8 +12,8 @@ import { createBot, createRestManager, GatewayPayload, SnakeCasedPropertiesDeep 
 import logger from "../utils/logger.ts";
 import { updateDevCommands } from "../utils/updateSlash.ts";
 import { BotClient, setupBotClient } from "./botClient.ts";
-import { setGuildCommands } from "./events/interactions/slash/setGuildCommands.ts";
-import { setupEventHandlers } from "./events/mod.ts";
+import { setGuildCommands } from "./events/interactions/commands/setGuildCommands.ts";
+import { setupEventHandlers } from "./events/events.ts";
 
 export const bot = createBot({
   token: DISCORD_TOKEN,

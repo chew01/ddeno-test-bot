@@ -2,7 +2,7 @@ import { DEV_GUILD_ID } from "../../configs.ts";
 import { ApplicationCommandOption, ApplicationCommandTypes, Bot } from "../../deps.ts";
 import { BotClient } from "../bot/botClient.ts";
 import { updateCommandVersion } from "../database/commandVersion.ts";
-import commands from "../bot/events/interactions/mod.ts";
+import commands from "../bot/events/interactions/interactionCommands.ts";
 import { serverLanguages, translate } from "../bot/languages/translate.ts";
 import { ArgumentDefinition } from "../bot/types/command.ts";
 
